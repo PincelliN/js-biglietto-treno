@@ -3,3 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+.train{
+    background-image: url(../img/locomotiva-a-vapore-veicoli-treni-1129535.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.paint{
+    background-image: url(../img/157771759-trenino-per-bambini-stilizzato-vettoriale-con-sei-corse-in-carrozza-di-campo.jpg);
+    background-size: contain;
+    background-position: center;
+    height: 40px;
+}

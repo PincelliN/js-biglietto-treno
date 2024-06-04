@@ -8,6 +8,11 @@
 
 
 
+//chiedere nome e comogme
+let user = prompt("Nome intestatario biglietto");
+document.getElementById("passenger").innerHTML = user;
+
+
 //chiedere quanti chilometri vuole fare l'utente
 let distanza = parseInt(prompt("Quanti chilometri vuoi percorrere?"));
 
@@ -36,8 +41,8 @@ if (userAge>65) {
 
 }else if (userAge<17) {
      let price = distanza * 0.21;
-     const priceover = (price * 20) / 100;
-     priceTicket = (price - priceover).toFixed(2);
+     const priceunder = (price * 20) / 100;
+     priceTicket = (price - priceunder).toFixed(2);
 
      console.log(priceTicket);
 
@@ -49,6 +54,6 @@ if (userAge>65) {
 console.log(priceTicket);
 
 //stampare costo del biglietto
-let prisePrint = " Il prezzo del tuo bigletto è " + priceTicket;
+let prisePrint = priceTicket + " $ ";
 console.log(prisePrint);
 document.getElementById("ticket").innerHTML = prisePrint;
