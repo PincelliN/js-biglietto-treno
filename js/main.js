@@ -40,7 +40,6 @@ if (userAge>65) {
     console.log(priceTicket);
 
 }else if (userAge<17) {
-     let price = distanza * 0.21;
      const priceunder = (price * 20) / 100;
      priceTicket = (price - priceunder).toFixed(2);
 
@@ -48,7 +47,6 @@ if (userAge>65) {
 
 }else{
     priceTicket = (distanza * 0.21).toFixed(2);
-
      console.log("prezzo finale",priceTicket);
 }
 console.log(priceTicket);
